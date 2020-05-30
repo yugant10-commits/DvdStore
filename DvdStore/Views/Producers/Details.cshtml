@@ -1,0 +1,34 @@
+﻿@model DvdStore.Models.Producer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Producer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducerFname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducerFname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducerLname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducerLname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProducerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
